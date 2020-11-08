@@ -15,7 +15,7 @@ def run():
             if KB.is_pressed('esc'):
                 img = pyautogui.screenshot(region=(625,665,642,149))
                 output = pytesseract.image_to_string(img)
-                output=' '.join(output)
+                output=''.join(output)
                 print(output)
                 #//output = output.split(' ')
 
